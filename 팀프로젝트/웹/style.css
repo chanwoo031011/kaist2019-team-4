@@ -1,0 +1,56 @@
+body{
+    border:px gray double;
+}
+.header{
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+    border: 0px white double;
+}
+.header h1{
+    font-size:10;
+    padding:2px;
+}
+.nav{
+    border: rgb(173, 2, 2) 1px double;
+    height: 50px;
+    background-color:rgb(173, 2, 2);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    padding-top: 18px;
+}
+.nav .manu{
+    padding-left:10px;
+}
+.nav .menu a{
+    border:  solid 0px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 12px 12px;
+}
+.grid .main{
+    float:left;
+    border: 0px black solid;
+}
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 200px;
+}
+.grid .side{
+    border: 0px black ridge;
+   
+    
+}
+.grid .side .manu{
+    padding: 40px opx;
+    border: 3px rgb(170, 3, 3) solid;
+    
+}
+.grid .main .pict{
+    background-repeat: none;
+    background-position: center;
+    margin:5px 5%; 
+    background-repeat: no-repeat;
+}

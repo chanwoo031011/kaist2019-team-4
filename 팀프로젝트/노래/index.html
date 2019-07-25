@@ -15,14 +15,13 @@
     </div>
 
 <style>
-li{margin-bottom:  70px}
 body{background-color: beige}
 h3{font-family: 'Nanum Myeongjo', serif;}
 h1{border-bottom:3px rgb(235, 95, 2) solid; padding:30px; font-family: 'Nanum Myeongjo', serif;}
-h1{text-align:center;}
-ol{font-family:'Bitter', serif;}
-h2{}
-
+h1{text-align:center; font-size: 40px}
+ol{font-family:'Bitter', serif; font-size: 30px}
+li{margin-bottom:  70px;}
+body{background-image:url('.png')}
 </style>
 <ol>
     <li><a href="lofi.html"> <strong>lofi hiphop</strong>(good at studing) </a> </li>
@@ -35,6 +34,21 @@ h2{}
 <form action="https://www.google.co.kr/search">
     <input name="q" type="text">
     <input type="submit">
+
+<input type="button" value="night" style=" background-color: beige"
+onclick="
+if(this.value==='night'){
+    document.querySelector('body').style.color='beige';
+    document.querySelector('body').style.backgroundColor='black';
+    this.value='day';
+}
+else{
+    document.querySelector('body').style.color='black';
+    document.querySelector('body').style.backgroundColor='beige';
+    this.value='night';
+}
+">
+
 
 </body>
 </html>

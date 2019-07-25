@@ -12,17 +12,46 @@
 h1{border-bottom:3px rgb(235, 95, 2) solid; padding:30px; font-family:'Bitter', serif;}
 
 body{background-color: beige}
+li {
+            color: rgb(42, 173, 224);
+        }
+        div{border-right: 20px 50px 30px}
+    #continer1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;}
 </style>
 
 
-        <ol>
+<div id="continer1">
+   <ul>
     <li id="target">lofi hip hop radio - beats to relax/study to</li>
     <iframe width="400" height="200" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
     <li>lofi hip hop radio - beats to chill/study/relax</li>
     <iframe width="400" height="200" src="https://www.youtube.com/embed/SGwXjk8MsWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+    <div>
+   <ul>
     <li>24/7 lofi hip hop radio - beats to study/chill/relax </li>
     <iframe width="400" height="200" src="https://www.youtube.com/embed/F0IbjVq-fgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-            
-</ol>
+    <li>24/7 Korean Underground Indie/R&B/Hip hop Radio</li>       
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/fnh4V3u9lA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </ul>
+    </div>
+    </ul>
+
+    <input type="button" value="night" style=" background-color: beige"
+    onclick="
+    if(this.value==='night'){
+        document.querySelector('body').style.color='beige';
+        document.querySelector('body').style.backgroundColor='black';
+        this.value='day';
+    }
+    else{
+        document.querySelector('body').style.color='black';
+        document.querySelector('body').style.backgroundColor='beige';
+        this.value='night';
+    }
+    ">
+
 </body>
 </html>

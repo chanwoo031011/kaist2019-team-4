@@ -25,17 +25,11 @@
             color: rgb(42, 173, 224);
         }
 
-        #target {
-            color: blue;
-        }
-
+        
         #gold {
-            color: gold; display: grid; grid-template-columns: 1fr 1fr;
+            color: gold; 
         }
 
-        #expain {
-            color: gold;
-        }
 
         div {
             border-right: 20px 50px 30px
@@ -55,14 +49,32 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </ul>
     <div>
-            <li>OFFONOFF - Bath</li>
+         <ul>   
+        <li>OFFONOFF - Bath</li>
             <iframe width="400" height="200" src="https://www.youtube.com/embed/F9YcaibdONA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <li>offonoff - 'Photograph'</li>
             <iframe width="400" height="200" src="https://www.youtube.com/embed/2b1E-zu-QEM" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </ul>
+        </div>
+</ul>
 </div>
+
+<input type="button" value="night" style=" background-color: beige"
+onclick="
+if(this.value==='night'){
+    document.querySelector('body').style.color='beige';
+    document.querySelector('body').style.backgroundColor='black';
+    this.value='day';
+}
+else{
+    document.querySelector('body').style.color='black';
+    document.querySelector('body').style.backgroundColor='beige';
+    this.value='night';
+}
+">
+
 </body>
 
 </html>

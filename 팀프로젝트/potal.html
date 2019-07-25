@@ -12,7 +12,7 @@
         }
         .top_manu a{
             text-decoration: none;
-            color: black;
+            color: rgb(209, 59, 209);
         }
         .top_manu img{
             padding-top: 8px;
@@ -30,9 +30,6 @@
         .sercher .center{
             display:grid;
             grid-template-columns:40px 380px 50px;
-        }
-        .sercher .center form input{
-            margin-left: 2px;
         }
         .sites{
             height: 300px;
@@ -61,7 +58,21 @@
 </head>
 <body>
     <div class="top_manu">
-        <a href="https://talented.kaist.ac.kr:8443">ip과제</a>  
+        <a href="https://talented.kaist.ac.kr:8443/">ip과제</a>  
+        
+        <input type="button" value="night" style=" background-color:gray"
+        onclick="
+        if(this.value==='night'){
+            document.querySelector('body').style.color='white';
+            document.querySelector('body').style.backgroundColor='black';
+            this.value='day';
+        }
+        else{
+            document.querySelector('body').style.color='black';
+            document.querySelector('body').style.backgroundColor='white';
+            this.value='night';
+        }
+        ">
     </div>
     <div class="logo">
         <center>
@@ -73,23 +84,12 @@
     <div class="sercher">
             <div class="center">
                 <div class="a"></div>
-                <form>
-                    <input type="text" size="50" width="600px" height="40px">
+                <form action="https://www.google.co.kr/search">
+                    <input type="text" size="50" width="600px" height="40px" name="q">
+                    <input type="submit">
                 </form>
 
-                <input type="button" value="night" style=" background-color:gray"
-                onclick="
-                if(this.value==='night'){
-                    document.querySelector('body').style.color='white';
-                    document.querySelector('body').style.backgroundColor='black';
-                    this.value='day';
-                }
-                else{
-                    document.querySelector('body').style.color='black';
-                    document.querySelector('body').style.backgroundColor='white';
-                    this.value='night';
-                }
-                ">
+                
             </div> 
             
     </div>
